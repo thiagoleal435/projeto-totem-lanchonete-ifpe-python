@@ -23,12 +23,14 @@ class Cliente:
         for item, detalhes in self.cardapio.items():
             print(f"{item}: R${detalhes['preco']} (Disponível: {detalhes['estoque']})")
 
+#Adicionar pergunta: "Deseja pedir mais alguma coisa?"
     def fazer_pedido(self):
         self.exibir_cardapio()
         item = input("Digite o nome do item que deseja: ")
         quantidade = int(input("Digite a quantidade: "))
 
         if item in self.cardapio and self.cardapio[item]['estoque'] >= quantidade:
+            #Atualizar a quantidade de estoque no arquivo menu_estoque.txt
             self.cardapio[item]['estoque'] -= quantidade
             with open(self.pedidos_file, 'a') as file:
                 file.write(f"{item},{quantidade}\n")

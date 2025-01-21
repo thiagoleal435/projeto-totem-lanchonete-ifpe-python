@@ -1,2 +1,5 @@
-#Deve fazer o registro de cada pedido. Ex: 1, 2, Pastel, 3, Suco, 2, 18, em preparo
-#Onde a ordem é: numDoPedido, quantidadeDeItens, item1, quantidadeItem1..., valorTotal, status(pendente, em preparo, pronto)
+Bauru,3,
+Coxinha,1
+Bauru,2
+Bauru,2,pendente
+Bauru,2

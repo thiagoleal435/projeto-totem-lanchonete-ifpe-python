@@ -1,1 +1,2 @@
-#Deve conter os itens, preços e quantidade. Ex: Coxinha, 3.50, 20 
+Coxinha,4.00,20
+Bauru,5.00,2
