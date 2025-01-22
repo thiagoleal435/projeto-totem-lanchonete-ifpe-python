@@ -4,6 +4,10 @@
 #Ralizar pedidos
 #Salvar os pedido em pedidos.txt
 
+#Entre 21/01 e 25/01 resolver:
+#1- Adicionar pergunta: "Deseja pedir mais alguma coisa?"
+#2- Atualizar a quantidade de estoque no arquivo menu_estoque.txt
+
 class Cliente:
     def __init__(self, menu_file, pedidos_file):
         self.menu_file = menu_file
@@ -23,14 +27,12 @@ class Cliente:
         for item, detalhes in self.cardapio.items():
             print(f"{item}: R${detalhes['preco']} (Disponível: {detalhes['estoque']})")
 
-#Adicionar pergunta: "Deseja pedir mais alguma coisa?"
     def fazer_pedido(self):
         self.exibir_cardapio()
         item = input("Digite o nome do item que deseja: ")
         quantidade = int(input("Digite a quantidade: "))
 
         if item in self.cardapio and self.cardapio[item]['estoque'] >= quantidade:
-            #Atualizar a quantidade de estoque no arquivo menu_estoque.txt
             self.cardapio[item]['estoque'] -= quantidade
             with open(self.pedidos_file, 'a') as file:
                 file.write(f"{item},{quantidade}\n")
