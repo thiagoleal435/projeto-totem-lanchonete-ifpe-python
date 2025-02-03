@@ -20,7 +20,7 @@ def menuPrincipal():
             cliente = Cliente('menu_estoque.txt', 'pedidos.txt')
             cliente.menu_cliente()
         elif opcao == '2':
-            vendedor = Vendedor('pedidos.txt')
+            vendedor = Vendedor('pedidos.txt', 'menu_estoque.txt')
             vendedor.menu_vendedor()
         elif opcao == '3':
             print("Saindo do sistema. Até logo!")

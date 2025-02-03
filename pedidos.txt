@@ -1,5 +1,0 @@
-Bauru,3,
-Coxinha,1
-Bauru,2
-Bauru,2,pendente
-Bauru,2
