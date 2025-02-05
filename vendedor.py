@@ -1,8 +1,9 @@
 #Responsável por:
 
-#Exibe os pedidos pendentes
-#Atualiza o status dos pedidos no arquivo pedidos.txt
+#Exibe os pedidos listados em pedidos.txt
+#Atualiza o status de um pedido
 #Gerencia o estoque e cardápio
+#Adiciona, exclui ou altera um item do cardápio
 
 class Vendedor:
     def __init__(self, pedidos_file, menu_file):

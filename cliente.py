@@ -3,10 +3,7 @@
 #Exibir o cardápio
 #Ralizar pedidos
 #Salvar os pedido em pedidos.txt
-
-#Entre 21/01 e 25/01 resolver:
-#1- Adicionar pergunta: "Deseja pedir mais alguma coisa?"
-#2- Atualizar a quantidade de estoque no arquivo menu_estoque.txt
+#Cancelar um pedido feito
 
 class Cliente:
     def __init__(self, menu_file, pedidos_file):

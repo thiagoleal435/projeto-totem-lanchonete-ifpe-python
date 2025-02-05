@@ -1,9 +1,5 @@
-# Responsavel por:
-
-#Gerencia a comunicação entre cliente e vendedor
-#Exibe menu principal para escolher entre cliente e vendedor
-#Carrega os dados do cardápio e pedidos
-#Instanciar as classes e vendedor
+#Esse código é a interface principal do Sistema de Autoatendimento para a lanchonete do Campus.
+#Ele usa modularização para melhorar a organização e importa apenas as classes presentes nos scripts cliente.py e vendedor.py 
 
 from cliente import Cliente
 from vendedor import Vendedor
@@ -28,5 +24,4 @@ def menuPrincipal():
         else:
             print("Opção inválida. Tente novamente.")
 
-if __name__ == "__main__":
-    menuPrincipal()
+menuPrincipal()

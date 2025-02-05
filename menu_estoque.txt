@@ -1,4 +1,5 @@
-Coxinha,4.50,3
+Coxinha,4.5,3
 Bauru,6.0,1
-Suco,1.0,4
+Suco,1.0,3
 Coca Cola,10.0,3
+Agua,2.0,30
