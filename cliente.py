@@ -29,7 +29,12 @@ class Cliente:
         pedido = []
 
         while True:
-            item = input("Digite o nome do item que deseja: ")
+            item = input("Digite o nome do item que deseja\nou digite sair para cancelar: ")
+            
+            if item == "sair":
+                print("Retornando ao menu do cliente...")
+                return  # Sai da função e volta ao men
+            
             if item not in self.cardapio:
                 print("Item não encontrado no cardápio. Tenta novamente.")
                 continue
