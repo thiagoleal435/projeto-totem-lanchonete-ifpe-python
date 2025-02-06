@@ -1,7 +1,7 @@
 #Esse código é a interface principal do Sistema de Autoatendimento para a lanchonete do Campus.
 #Ele usa modularização para melhorar a organização e importa apenas as classes presentes nos scripts cliente.py e vendedor.py 
 
-from cliente import Cliente
+from cliente import Cliente 
 from vendedor import Vendedor
 
 def menuPrincipal():

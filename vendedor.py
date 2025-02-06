@@ -25,7 +25,7 @@ class Vendedor:
 
     def limpar_pedidos(self):
         with open(self.pedidos_file, 'w') as file:
-            pass
+            file.write(" ")
         print("Todos os pedidos foram processados e o arquivo está limpo.")
 
     def alterar_status_do_pedido(self):

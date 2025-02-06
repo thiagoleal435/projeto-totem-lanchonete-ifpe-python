@@ -33,7 +33,7 @@ class Cliente:
             
             if item == "sair":
                 print("Retornando ao menu do cliente...")
-                return  # Sai da função e volta ao men
+                return  # Sai da função e volta ao menu
             
             if item not in self.cardapio:
                 print("Item não encontrado no cardápio. Tenta novamente.")
